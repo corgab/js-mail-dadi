@@ -1,18 +1,16 @@
-//chiedere all utente lemail
-// prendere il bottone
-//prendere email
 //whitelist
 const submitElement = document.getElementById("submit")
 const inputMailElement = document.getElementById("mail")
 const whitelistMail = ["carlo", "gabriele", "mario", "tommaso"]
 
+//var per stampare 
 let userInWhitelist = false
 
 // dare levento al bottone
 submitElement.addEventListener("click", function() {
+
     // prendere il valore di input
     const mailUtente = inputMailElement.value //string
-    //console.log(mailUtente)
 
     //scomporre array con for
     for(i = 0; i < whitelistMail.length; i++) {
@@ -26,9 +24,11 @@ submitElement.addEventListener("click", function() {
 
     console.log("hai inserito " + mailUtente)
     if(userInWhitelist == true) {
-        console.log("sei in whitelist")
-    } else {
-        console.log("non sei in whielist")
+        console.log("sei in whitelist"
+        )
+    } else{
+        console.log("non sei in whielist"
+        )
     }
 })
 
