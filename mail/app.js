@@ -18,9 +18,10 @@ submitElement.addEventListener("click", function() {
     //scomporre array con for
     for(i = 0; i < whitelistMail.length; i++) {
         whitelist = whitelistMail[i]
+        console.log(whitelist)
         //console.log(whitelist)
-
     }
+    console.log(mailUtente)
 
     //check della whitelist
     if(mailUtente == "") {
@@ -31,6 +32,6 @@ submitElement.addEventListener("click", function() {
 
     } else if(mailUtente !== whitelist) {
         console.log("non sei in whitelist")
-        
+
     }
 })
